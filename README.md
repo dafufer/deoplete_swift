@@ -3,7 +3,7 @@
 Swift completion for [deoplete](https://github.com/Shougo/deoplete.nvim),
 based on [SourceKitten](https://github.com/jpsim/SourceKitten).
 
-![screencast](____images/example.gif)
+![screencast](_images/example.gif)
 
 ## Requirements
 
