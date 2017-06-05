@@ -45,6 +45,7 @@ class Source(Base):
         self.__sdk = self.vim.eval('deoplete_swift#get_sdk()')
 
     def get_complete_position(self, context):
+        # Code based on https://github.com/mitsuse/autocomplete-swift
         import re
 
         result = re.compile(r'\w*$').search(context['input'])
@@ -56,6 +57,7 @@ class Source(Base):
 
 
     def gather_candidates(self, context):
+        # Code based on https://github.com/mitsuse/autocomplete-swift
         import subprocess
         import json
 
